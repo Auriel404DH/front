@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 25px;
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 500px;
+  background-color: rgba(144, 148, 142, 0.537);
+  -webkit-box-shadow: 0px 2px 10px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 2px 10px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 2px 10px 5px rgba(34, 60, 80, 0.2);
+}

@@ -1,0 +1,139 @@
+.inputForm {
+  padding: 10px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.inputWrapper {
+  max-width: 400px;
+  width: 100%;
+}
+
+.inputTextWrapper {
+  max-width: 400px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #fff;
+  height: 230px;
+}
+
+input {
+  max-width: 400px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.createPost {
+  background-color: #9f8ba3;
+  border-radius: 16px;
+  height: 470px;
+  padding: 20px;
+}
+
+.formTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  gap: 15px;
+  margin: 15px auto;
+  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 600;
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+
+.formButton {
+  background-color: #47eb65;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: darkgrey;
+    transform: scale(1.1);
+  }
+}
+
+.body {
+  position: relative;
+}
+
+.post {
+  display: flex;
+  color: #fff;
+  width: 400px;
+  background-color: #9f8ba3;
+  border-radius: 15px;
+  gap: 10px;
+  position: relative;
+  flex-direction: column;
+}
+
+.postIcon {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.postTitle {
+  padding: 20px;
+  font-size: 24px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+
+.authorBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 40px;
+}
+
+.postUser {
+  & > span {
+    font-weight: 600;
+    background-color: #fff;
+    color: #9f8ba3;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 8px;
+  gap: 20px;
+  align-items: center;
+}
+
+.tag {
+  margin: 0 10px;
+  background-color: #fff;
+  color: #9f8ba3;
+  padding: 6px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
