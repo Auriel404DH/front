@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { createPost } from '../../api/Posts';
 import styles from '../../styles/Post.module.scss';
 import { useAppDispatch, useAppSelector } from '../../hooks';
-import { navigateTo } from '../../models';
 import { createLastPost } from '../../redux/slices/post';
 
 const CreatePost = () => {

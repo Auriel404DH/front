@@ -33,9 +33,9 @@ export const createPost = (requestData: IPost): Promise<ICreatePostReturn> =>
       };
     });
 
-export const deletePost = (requestData: { id: string }): Promise<ICreatePostReturn> =>
+export const deletePost = (requestData: any): Promise<ICreatePostReturn> =>
   mainInstance
-    .delete('/post', requestData)
+    .delete(`/post/${requestData.id}`, { ...requestData })
     .then(() => {
       return {
         ok: true,

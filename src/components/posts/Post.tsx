@@ -29,7 +29,9 @@ const Post: React.FC<IProps> = ({ post }) => {
         <div>{post.text}</div>
         <div>
           {post.tags.map((tag) => (
-            <span className={styles.tag}>{tag}</span>
+            <span key={tag} className={styles.tag}>
+              {tag}
+            </span>
           ))}
         </div>
         <div className={styles.authorBlock}>

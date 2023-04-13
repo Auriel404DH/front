@@ -25,7 +25,7 @@ const News = () => {
 
   React.useEffect(() => {
     getPostsFunc();
-  }, []);
+  }, [posts]);
 
   return (
     <div className={styles.postsBlock}>
@@ -33,7 +33,7 @@ const News = () => {
       {posts.length > 0 && (
         <>
           {posts.map((post: IPostArr) => (
-            <Post post={post} />
+            <Post key={post._id} post={post} />
           ))}
         </>
       )}
